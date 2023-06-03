@@ -1,3 +1,6 @@
+config.json
+states.json
+
 # No dot-directories except github/vscode
 .*/
 !.vscode/

@@ -1,6 +1,7 @@
 "use strict";
 
-const utils = require("@iobroker/adapter-core");
+//const utils = require("@iobroker/adapter-core");
+const utils = require("./utils");
 
 const axios = require("axios").default;
 const crypto = require("crypto");

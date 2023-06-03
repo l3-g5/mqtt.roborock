@@ -1,0 +1,9 @@
+{
+    "logLevel": "Info",
+    "username": "roborock user",
+    "password": "roborock secret",
+    "mqtt_host": "mqtt://localhost:1883",
+    "mqtt_user": "mqtt user",
+    "mqtt_password": "mqtt secret",
+    "topic": "roborock"
+}
