@@ -1,0 +1,27 @@
+[Unit]
+Description= Bridges your Roborock vacuum to MQTT
+After=remote-fs.target network.target
+
+[Service]
+# Change both to your username, its a bad idea to run as root.
+User=root
+Group=root
+# Change this to your landroid directory
+WorkingDirectory=/opt/ioBroker.roborock
+StandardOutput=file:/var/log/mqtt-roborock-bridge.log
+StandardError=file:/var/log/mqtt-roborock-bridge.service.err
+StandardInput=/dev/null
+
+##########################################
+# Please do not change this section
+##########################################
+ExecStart=/usr/bin/node main.js
+Type=simple
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
