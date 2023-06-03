@@ -9,7 +9,7 @@ Group=root
 # Change this to your landroid directory
 WorkingDirectory=/opt/ioBroker.roborock
 StandardOutput=file:/var/log/mqtt-roborock-bridge.log
-StandardError=file:/var/log/mqtt-roborock-bridge.service.err
+StandardError=file:/var/log/mqtt-roborock-bridge.err
 StandardInput=/dev/null
 
 ##########################################
