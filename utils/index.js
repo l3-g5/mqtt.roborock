@@ -86,14 +86,22 @@ class Adapter {
 
 	/**
 	 * @param {string} id
-	 * @returns {Promise<State | undefined>}
+	 * @returns {any}
 	 */
-	getStateAsync(id) {
+	getState(id) {
 		let val = this.states[id];
 		if (val && val.val === undefined) {
 			val = undefined;
 		}
-		return new Promise((resolve) => { resolve(val); });
+		return val;
+	}
+
+	/**
+	 * @param {string} id
+	 * @returns {Promise<State | undefined>}
+	 */
+	getStateAsync(id) {
+		return new Promise((resolve) => { resolve(this.getState(id)); });
 	}
 
 	/**
@@ -165,6 +173,15 @@ class Adapter {
 		this.log.debug("MQTT subscribe:", topic);
 		this.client.subscribe(topic);
 		this.subscribedStates.push(topic);
+	}
+
+	/**
+	 * @param {string} id
+	 * @param {*} obj
+	 * @returns {Promise<any>}
+	 */
+	setObjectAsync(id, obj) {
+		return this.setObjectNotExistsAsync(id, obj);
 	}
 
 	/**
