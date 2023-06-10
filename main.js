@@ -636,7 +636,7 @@ class Roborock extends utils.Adapter {
 
 			if (robots[robot].setup.camera) {
 				cameraCount++;
-				go2rtcConfig.streams[duid] = "roborock://mqtt-eu-3.roborock.com:8883?u=" + u + "&s=" + s + "&k=" + k + "&did=" + duid + "&key=" + localKey + "&pin=" + this.config.cameraPin;
+				go2rtcConfig.streams[duid] = "roborock://mqtt-eu-5.roborock.com:8883?u=" + u + "&s=" + s + "&k=" + k + "&did=" + duid + "&key=" + localKey + "&pin=" + this.config.cameraPin;
 			}
 		}
 
