@@ -62,6 +62,10 @@ class Adapter {
 		} catch (err) {
 			this.states = {};
 		}
+		// resend all on restart
+		for (const id in this.states) {
+			this.states[id].ack = false;
+		}
 
 		this.subscribedStates = [];
 		this.client = mqtt.connect(this.config.mqtt_host, {
@@ -194,7 +198,6 @@ class Adapter {
 			if (!this.states[id]) {
 				this.states[id] = new ExtendedState(obj.common.def, false, obj.common);
 			} else {
-				this.states[id].ack = false;
 				this.states[id].common = obj.common;
 			}
 		}
