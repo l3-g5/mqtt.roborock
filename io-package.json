@@ -1,98 +1,98 @@
 {
   "common": {
     "name": "roborock",
-    "version": "0.1.6",
+    "version": "0.4.4",
     "news": {
-      "0.1.6": {
-        "en": "Add touch support for zones in web interface\nFix room mapping\nRefactor map creation code\nFix robot rotation when parked\nDisplay obstacles of Roborock S6 MaxV (and maybe others) on map\nAdd support for virtual walls\nAdd support for no mop zones",
-        "de": "Fügen Sie Touch-Support für Zonen in Web-Schnittstelle hinzu\nZimmer Mapping reparieren\nRefactor Map Erstellungscode\nRoboterrotation beim Parken festhalten\nHindernisse von Roborock S6 MaxV (und vielleicht andere) auf der Karte anzeigen\nUnterstützung für virtuelle Wände hinzufügen\nUnterstützung für keine Mop-Zonen hinzufügen",
-        "ru": "Добавьте поддержку касания зон в веб-интерфейсе\nFix карта комнаты\nКод создания карты Refactor\nИсправление вращения робота припаркованном\nОтображение препятствий Roborock S6 MaxV (и, возможно, другие) на карте\nДобавить поддержку виртуальных стен\nДобавьте поддержку без зон mop",
-        "pt": "Adicionar suporte de toque para zonas na interface web\nCorrigir mapeamento de quarto\nCódigo de criação do mapa de refator\nCorrigir rotação do robô quando estacionado\nExibir obstáculos de Roborock S6 MaxV (e talvez outros) no mapa\nAdicionar suporte para paredes virtuais\nAdicionar suporte para zonas sem esfregões",
-        "nl": "Aanraking voor zones in het web interface\nQuality over Quantity (QoQ) Releases Vertaling:\nRefactor kaart creatie code\nFix robot rotatie toen hij geparkeerd werd\nVertaling:\nSteun voor virtuele muren\nAdvies ondersteuning",
-        "fr": "Ajouter le support tactile pour les zones dans l'interface web\nCartographie fixe\nFacteur de création de carte\nTour de robot fixe quand stationné\nAfficher les obstacles de Roborock S6 MaxV (et peut-être d'autres) sur la carte\nAjouter le support pour les murs virtuels\nAjouter le support pour aucune zone mop",
-        "it": "Aggiungi supporto touch per zone in interfaccia web\nRisolvere la mappatura della stanza\nCodice di creazione della mappa refactor\nFissare rotazione robot quando parcheggiato\nVisualizza gli ostacoli di Roborock S6 MaxV (e forse altri) sulla mappa\nAggiungi supporto per pareti virtuali\nAggiungi supporto per nessuna zona mop",
-        "es": "Agregar soporte táctil para zonas en interfaz web\nCartografía de espacio fijo\nCódigo de creación de mapas de refactor\nCorregir rotación robot cuando estacionado\nMostrar obstáculos de Roborock S6 MaxV (y tal vez otros) en el mapa\nAñadir soporte para paredes virtuales\nAñadir soporte para no zonas mop",
-        "pl": "Addd touch support for zones in web interface\nFix\nKod źródłowy\nFix robot rotacyjny kiedy parkował\nRozgrywki Roborocka S6 MaxVa (i mogą być inne)\nPomoc dla wirtualnych murów\nWspierać się bez strefy mokrajowej",
-        "uk": "Додавання сенсорної підтримки зон в веб-інтерфейсі\nФіксація карти приміщення\nКод створення рефактора\nВиправлення обертання роботів при парковій\nПоказати перешкоди Roborock S6 MaxV (і можливо, інші) на карті\nДодавання підтримки віртуальних стін\nДодайте підтримку без зон",
-        "zh-cn": "增加网站接口区的支助\n固定会议室制图\n成果地图制作守则\n当停车场时,汽车轮换\n关于地图的Roborock S6 MaxV(及其他人)面临的障碍\n增加对虚拟墙壁的支持\n增加对未种植区的支持"
-      },
-      "0.1.5": {
-        "en": "Fix bug with sendRequest",
-        "de": "Fehler beheben mit sendRequest",
-        "ru": "Исправлена ошибка с sendRequest",
-        "pt": "Corrigir erro com o sendRequest",
+      "0.4.4": {
+        "en": "Fix for getting the map for each cleaning record",
+        "de": "Fix, um die Karte für jeden Reinigungsrekord zu bekommen",
+        "ru": "Исправление для получения карты для каждой записи очистки",
+        "pt": "Fix para obter o mapa para cada registro de limpeza",
         "nl": "Vertaling:",
-        "fr": "Correction de bug avec sendRequest",
-        "it": "Correggere bug con sendRequest",
-        "es": "Corregir error con sendRequest",
-        "pl": "Fix bug",
-        "uk": "Виправлення помилок з sendRequest",
-        "zh-cn": "发出的请求"
+        "fr": "Fix pour obtenir la carte pour chaque enregistrement de nettoyage",
+        "it": "Fissare per ottenere la mappa per ogni record di pulizia",
+        "es": "Fijación para obtener el mapa para cada registro de limpieza",
+        "pl": "Fix ma na celu uzyskanie mapy dla każdego zapisu czyszczonego",
+        "uk": "Виправлення для отримання карти для кожного запису очищення",
+        "zh-cn": "每个清洁记录地图的ix"
       },
-      "0.1.4": {
-        "en": "Correctly process map on web interface with multiple robots\nFix robot running detection to start map updater correctly\nFix huge memory leak when creating maps\nFix consumables for S6 MaxV\nStart webserver and websocket server only when map creation is enabled\nUpdate homedata without fully reinitializing the adapter\nAdd ability to reset consumables\nAdd clean count for room cleaning\nAdd resume_segment_clean and resume_zoned_clean",
-        "de": "Prozessieren Sie die Karte auf der Web-Schnittstelle mit mehreren Robotern richtig\nFix Roboter-Lauferkennung, um Karten-Updater richtig zu starten\nFix riesige Speicherleck bei der Erstellung von Karten\nVerbrauchsmaterialien für S6 MaxV festsetzen\nStarten Sie Webserver und Websocket Server nur, wenn die Kartenerstellung aktiviert ist\nHomedata aktualisieren, ohne den Adapter vollständig neu zu installieren\nHinzufügen der Möglichkeit, Verbrauchsmaterialien zurückzusetzen\nReine Anzahl der Zimmerreinigung hinzufügen\nLebenslauf hinzufügen_segment_clean und Lebenslauf_zoned_clean",
-        "ru": "Правильно обрабатывать карту на веб-интерфейсе с несколькими роботами\nИсправление обнаружения робота для запуска обновления карты правильно\nИсправление огромной утечки памяти при создании карт\nИсправление расходных материалов для S6 MaxV\nНачните webserver и websocket сервер только тогда, когда создание карты разрешено\nОбновить домашние данные без полностью переинициирования адаптера\nДобавить возможность сброса расходных материалов\nДобавить чистый счет для уборки номеров\nДобавить резюме_сегмент_чисто и резюме_zoned_clean",
-        "pt": "Processe corretamente o mapa na interface web com vários robôs\nCorrigir a detecção de execução do robô para iniciar o atualizador do mapa corretamente\nCorrigir enorme vazamento de memória ao criar mapas\nConsumíveis de fixação para S6 MaxV\nIniciar servidor web e servidor websocket somente quando a criação de mapas está ativada\nAtualize os dados de casa sem reiniciar totalmente o adaptador\nAdicionar capacidade de redefinir consumíveis\nAdicionar contagem limpa para limpeza de quartos\nAdicionar currículo_segment_clean e retomar_zoned_clean",
-        "nl": "Verwerk de kaart op web interface met meerdere robots\nFix robot die de kaart updater correct start\nEen enorme geheugenlek als je kaarten creëert\nVertaling:\nBegin met webserver en websocket server alleen als de kaart creatie in staat is\nUpdate homedata zonder de adapter te herstarten\nVermogen om te resetten\nVoeg schoonmaakmiddel toe\nVertaling:",
-        "fr": "Effacer la carte sur l'interface web avec plusieurs robots\nCorrection de la détection de fonctionnement du robot pour démarrer correctement la mise à jour de la carte\nFixer une énorme fuite de mémoire lors de la création de cartes\nConsommables fixes pour S6 MaxV\nDémarrer webserver et serveur websocket seulement lorsque la création de carte est activée\nMettre à jour les homedata sans réinitialiser entièrement l'adaptateur\nAjouter la capacité de réinitialiser les consommables\nAjouter le compte propre pour le nettoyage de la chambre\nAjouter resume_segment_clean and resume_zoned_clean",
-        "it": "Elaborare correttamente la mappa sull'interfaccia web con più robot\nFissare il rilevamento dell'esecuzione del robot per avviare correttamente l'aggiornamento della mappa\nFissare la perdita di memoria enorme quando si crea mappe\nRisolvere i materiali di consumo per S6 MaxV\nAvviare webserver e websocket server solo quando la creazione della mappa è abilitata\nAggiornare i dati di casa senza riavviare completamente l'adattatore\nAggiungere la capacità di reset dei materiali di consumo\nAggiungere il conteggio pulito per la pulizia della camera\nAggiungi curriculum_segment_clean e riprendere_zoned_clean",
-        "es": "Mapa de proceso correcto en la interfaz web con múltiples robots\nArreglar detección de funcionamiento de robot para iniciar el actualización de mapa correctamente\nFijar una enorme fuga de memoria al crear mapas\nConsumibles fijos para S6 MaxV\nInicio servidor web y servidor websocket sólo cuando la creación de mapa está habilitada\nActualizar homedata sin reinicializar completamente el adaptador\nAñadir capacidad para reiniciar los consumibles\nAñadir cuenta limpia para la limpieza de la habitación\nAñadir curriculum vitae_segment_clean y curriculum vitae_zoned_clean",
-        "pl": "Poprawny proces na interfejsie internetowym z wieloma robotami\nFix Robot uruchamia aktualizację map\nPrzebieg pamięci w czasie tworzenia map\nS6 MaxVable (ang.)\nPoczątkowy serwer internetowy i internetowy tylko wtedy, gdy tworzenie map jest możliwe\nData bez w pełni zainicjowania adaptera\nUmiejętność resetowania\nCzyste konto\nAdd wznowił formaty_segment_clean and re_zoned_clean",
-        "uk": "Правильно обробляти карту на веб-інтерфейс з декількома роботами\nВиправлення виявлення роботи роботів для запуску оновлення карт правильно\nВиправлення величезної пам'яті при створенні карт\nВиправлення витратних матеріалів для S6 MaxV\nПочати сервер вебсервера і websocket тільки при створенні карт\nОновлення домашньої інформації без повного перевстановлення адаптера\nДодати можливість скидати витратні матеріали\nДодавання чистої кількості для прибирання приміщення\nДодати резюме_segment_clean and резюме_zoned_clean",
-        "zh-cn": "网站界线与多种汽车的网站连接图\nB. 发现开图的固定汽车\n制作地图\nS6 MaxV的固定配量\n只有当地图制作时才能够启动网站维护者和网络服务器\n更新的家政数据没有完全重新启动适应者\n增加重新组合的能力\n增加清洁房\n增 编"
+      "0.4.3": {
+        "en": "Refactor code\nFix mainUpdateInterval not working",
+        "de": "Erzeugniscode\nHauptUpdateInterval nicht funktionieren",
+        "ru": "Рефакторный код\nFix mainUpdateИнтервал не работает",
+        "pt": "Código do fator\nFix mainUpdateInterval não funciona",
+        "nl": "Refactor code\nFix mainUpdate",
+        "fr": "Code de calcul\nRéparez mainmiseInterval ne fonctionne pas",
+        "it": "Codice di fabbrica\nFissare mainUpdateInterval non funziona",
+        "es": "Código de referencia\nCorrección principalActualizaciónInterval no funciona",
+        "pl": "Kod źródłowy\nFix-UpdateInterval nie działać",
+        "uk": "Код рефактора\nВиправлення mainUpdateInterval не працює",
+        "zh-cn": "复制守则\n未工作的主要用途"
       },
-      "0.1.4-beta.6": {
-        "en": "Correctly process map on web interface with multiple robots",
-        "de": "Prozessieren Sie die Karte auf der Web-Schnittstelle mit mehreren Robotern richtig",
-        "ru": "Правильно обрабатывать карту на веб-интерфейсе с несколькими роботами",
-        "pt": "Processe corretamente o mapa na interface web com vários robôs",
-        "nl": "Verwerk de kaart op web interface met meerdere robots",
-        "fr": "Effacer la carte sur l'interface web avec plusieurs robots",
-        "it": "Elaborare correttamente la mappa sull'interfaccia web con più robot",
-        "es": "Mapa de proceso correcto en la interfaz web con múltiples robots",
-        "pl": "Poprawny proces na interfejsie internetowym z wieloma robotami",
-        "uk": "Правильно обробляти карту на веб-інтерфейс з декількома роботами",
-        "zh-cn": "网站界线与多种汽车的网站连接图"
+      "0.4.2": {
+        "en": "Fix S6 gen path\nAdd missing types library",
+        "de": "S6 gen path\nBibliothek für fehlende Typen hinzufügen",
+        "ru": "Fix S6 ген путь\nДобавить недостающие типы библиотеки",
+        "pt": "Fix S6 gen path\nAdicionar biblioteca de tipos ausentes",
+        "nl": "Vertaling:\nVermiste types bibliotheek",
+        "fr": "Fix S6 gen path\nAjouter les types manquants bibliothèque",
+        "it": "Fissare il percorso S6 gen\nAggiungi la libreria dei tipi mancanti",
+        "es": "Fijar el camino S6 gen\nAñadir biblioteca de tipos desaparecidos",
+        "pl": "Fix6 Gen\nStrona internetowa",
+        "uk": "Фіксація S6 генного шляху\nБібліотека відсутніх типів",
+        "zh-cn": "Fix S6genways\n增加缺失的图书馆"
       },
-      "0.1.4-beta.5": {
-        "en": "Fix bug when getting isCleaning state outside of vacuum.js",
-        "de": "Fehler beheben, wenn Sie isCleaning Zustand außerhalb von Vakuum. j)",
-        "ru": "Исправление ошибки при получении isCleaning состояние вне вакуума. Джс",
-        "pt": "Corrigir o erro ao obter isCleaning estado fora do vácuo. Js",
-        "nl": "Een insect als je buiten stofzuigt. Js",
-        "fr": "Correction de bug lors de l'obtention estCleaning état en dehors du vide. js",
-        "it": "Fissare il bug quando ottenere isCleaning stato al di fuori del vuoto. j",
-        "es": "Arregla el fallo cuando se consigue esCleaning estado fuera del vacío. js",
-        "pl": "Fix bug kiedy dostaje się stan klasyfikacji poza próżnią. js",
-        "uk": "Виправлення помилок при отриманні очищення стану поза вакуумом. свінгери",
-        "zh-cn": "当在真空以外进入采掘国时,先行。 j"
+      "0.4.1": {
+        "en": "Fix typos in definitions docs generation",
+        "de": "Fix typos in Definitionen docs generation",
+        "ru": "Исправление опечаток в генерации докс",
+        "pt": "Fix typos em definições docs geração",
+        "nl": "Vertaling:",
+        "fr": "Fixer les typos dans les définitions docs génération",
+        "it": "Fissare i tipi in definizioni generazione di docs",
+        "es": "Arreglar los tipos en la generación de los docs",
+        "pl": "Fix typos w definicji docs generation",
+        "uk": "Фіксувати типограми в визначеннях доксів",
+        "zh-cn": "评 注"
       },
-      "0.1.4-beta.4": {
-        "en": "Fix robot running detection to start map updater correctly\nFix robot list duplicate entries on map update\nBetter error handling for map creation",
-        "de": "Fix Roboter-Lauferkennung, um Karten-Updater richtig zu starten\nFix Roboterliste doppelte Einträge auf Kartenupdate\nBessere Fehlerbehebung für die Kartenerstellung",
-        "ru": "Исправление обнаружения робота для запуска обновления карты правильно\nFix список роботов дублировать записи на обновлении карты\nУлучшенная обработка ошибок для создания карты",
-        "pt": "Corrigir a detecção de execução do robô para iniciar o atualizador do mapa corretamente\nCorrigir entradas duplicadas da lista de robôs na atualização do mapa\nMelhor manipulação de erros para criação de mapas",
-        "nl": "Fix robot die de kaart updater correct start\nVertaling:\nBeter fout om te gaan met kaart creatie",
-        "fr": "Correction de la détection de fonctionnement du robot pour démarrer correctement la mise à jour de la carte\nListe de robots fixes doubles entrées sur la mise à jour de la carte\nMeilleure manipulation d'erreur pour la création de carte",
-        "it": "Fissare il rilevamento dell'esecuzione del robot per avviare correttamente l'aggiornamento della mappa\nFissare le voci duplicate dell'elenco dei robot sull'aggiornamento della mappa\nMigliore gestione degli errori per la creazione di mappe",
-        "es": "Arreglar detección de funcionamiento de robot para iniciar el actualización de mapa correctamente\nCorregir lista robot duplicar entradas en la actualización del mapa\nMejor manejo de errores para la creación de mapas",
-        "pl": "Fix Robot uruchamia aktualizację map\nLista robotów\nLepsze błędy w tworzeniu mapy",
-        "uk": "Виправлення виявлення роботи роботів для запуску оновлення карт правильно\nВиправлення списку користувачів дублікати записів на оновлення карт\nКраще використання помилок для створення карт",
-        "zh-cn": "B. 发现开图的固定汽车\nB. 固定汽车名单重复图表\nB. 绘制地图的更好错误处理"
+      "0.4.0": {
+        "en": "When a robot goes offline after error during cleaning then clear all intervals and start them when it robot comes back online\nWhen it fails to receive the map output a warning instead of error since most of them are timeouts\nMigrate definitions for each robot to new system\nUse the system to automatically generate documentation for each robot and it's parameters, attributes, commands, etc\nS7 Pro Ultra support",
+        "de": "Wenn ein Roboter nach dem Fehler bei der Reinigung offline geht, dann alle Intervalle löschen und starten Sie sie, wenn es Roboter online zurückkommt\nWenn es nicht gelingt, die Kartenausgabe eine Warnung anstelle von Fehlern zu erhalten, da die meisten von ihnen Timeouts sind\nDefinitionen für jeden Roboter zu neuem System migrieren\nVerwenden Sie das System, um automatisch die Dokumentation für jeden Roboter zu erstellen und es sind Parameter, Attribute, Befehle, etc\nS7 Pro Ultra-Unterstützung",
+        "ru": "Когда робот уходит в оффлайне после ошибки во время уборки, затем очистить все интервалы и начать их, когда робот возвращается онлайн\nКогда он не получает, чтобы получить карту вывести предупреждение вместо ошибки, так как большинство из них таймеры\nMigrate определения для каждого робота к новой системе\nИспользуйте систему, чтобы автоматически генерировать документацию для каждого робота и его параметры, атрибуты, команды и т.д\nС7 Про Ультра поддержка",
+        "pt": "Quando um robô vai off-line após o erro durante a limpeza, em seguida, limpar todos os intervalos e iniciá-los quando o robô voltar on-line\nQuando ele não recebe a saída do mapa um aviso em vez de erro, uma vez que a maioria deles são timeouts\nMigrar definições para cada robô para o novo sistema\nUse o sistema para gerar automaticamente documentação para cada robô e são parâmetros, atributos, comandos, etc\nS7 Pro Suporte ultra",
+        "nl": "Als een robot offline gaat na de fout tijdens het schoonmaken, dan alle intervals en start ze als het robot weer online komt\nAls het niet lukt om de kaart een waarschuwing te krijgen in plaats van fouten, omdat de meeste van hen time-outs zijn\nMigrate definities voor elke robot naar nieuw systeem\nGebruik het systeem om automatisch documentatie te genereren voor elke robot en het is parameters, beschikkingen, commando's, etc\nS07 Ultra steun",
+        "fr": "Quand un robot s'éteint après l'erreur pendant le nettoyage, puis effacez tous les intervalles et commencez-les quand le robot revient en ligne\nQuand il ne reçoit pas la sortie de la carte un avertissement au lieu d'erreur puisque la plupart d'entre eux sont des timeouts\nMigrer les définitions pour chaque robot à un nouveau système\nUtilisez le système pour générer automatiquement la documentation de chaque robot et ses paramètres, attributs, commandes, etc\nS7 Pro Support ultra",
+        "it": "Quando un robot va offline dopo l'errore durante la pulizia poi pulire tutti gli intervalli e avviarli quando il robot torna online\nQuando non riesce a ricevere l'output della mappa un avviso invece di errore poiché la maggior parte di loro sono timeouts\nMigrare le definizioni per ogni robot al nuovo sistema\nUtilizzare il sistema per generare automaticamente la documentazione per ogni robot ed è parametri, attributi, comandi, ecc\nS7 Pro Supporto ultra",
+        "es": "Cuando un robot va fuera de línea después del error durante la limpieza entonces despejar todos los intervalos y empezar cuando el robot vuelve en línea\nCuando no recibe la salida del mapa una advertencia en lugar de error ya que la mayoría de ellos son timeouts\nMigrar definiciones para cada robot a nuevo sistema\nUtilice el sistema para generar automáticamente documentación para cada robot y sus parámetros, atributos, comandos, etc\nS7 Pro Apoyo ultra",
+        "pl": "Kiedy robot wychodzi na jaw po błędzie w czyszczeniu, wyczyściwszy wszystkie odstępy i zaczyna je, gdy robot wraca do Internetu\nGdy nie otrzymuje mapy ostrzeżenia zamiast błędu, ponieważ większość z nich to czasy\nDefinicja każdego robota do nowego systemu\nUżycie systemu automatycznie generowania dokumentacji dla każdego robota i parametrów, atrybutów, komend, itd\n7 pkt Ultra wsparcie",
+        "uk": "Коли робота йде в автономному режимі після похибки, то очистити всі інтервали і почати їх, коли він працює назад онлайн\nКоли ви не зможете отримувати повідомлення на карті, замість помилки, оскільки більшість з них є таймерами\nМигрейтні визначення для кожного робота в новій системі\nВикористовуйте систему, щоб автоматично генерувати документацію для кожного робота, і це параметри, атрибути, команди тощо\nС7 Про Підтримка",
+        "zh-cn": "当一个汽车在清洁过程中遭到错误的侵犯时,每隔时间都清清晰,一旦汽车在网上回到网上时开始。\n当无法收到地图时,警告而不是错误,因为其中大多数是时间的。\nB. 对新制度的每一种抢劫行为的定义\n利用系统自动生成每一批汽车的证件及其参数、特征、指挥等\nS7 军事支助"
       },
-      "0.1.4-beta.3": {
-        "en": "Fix charger position",
-        "de": "Ladeposition festsetzen",
-        "ru": "Fix позиция зарядного устройства",
-        "pt": "Posição do carregador de fixação",
-        "nl": "Fix lading positie",
-        "fr": "Position du chargeur",
-        "it": "Posizione del caricatore fisso",
-        "es": "Posición de cargador fijo",
-        "pl": "Fix charger",
-        "uk": "Фіксована позиція зарядного пристрою",
-        "zh-cn": "固定收费职位"
+      "0.3.2": {
+        "en": "Fix some S8 Pro Ultra object types",
+        "de": "Einige S8 Pro Ultra Objekttypen",
+        "ru": "Исправьте некоторые S8 Pro Ultra типы объектов",
+        "pt": "Corrigir alguns S8 Pro Tipos de objeto ultra",
+        "nl": "Vertaling: Ultra objecttypes",
+        "fr": "Fixer un S8 Pro Types d ' objets Ultra",
+        "it": "Fissare alcuni S8 Pro Tipo di oggetto ultra",
+        "es": "Arregla un poco de S8 Pro Tipos de objeto ultra",
+        "pl": "S8 Pro Ultratype typeface",
+        "uk": "Виправлення деяких S8 Pro Типи об'єктів",
+        "zh-cn": "九 九 某些项目 1. tra物体类型"
+      },
+      "0.3.1": {
+        "en": "Fix water_box_custom_mode for S4 Max",
+        "de": "Wasser_box_custom_mode für S4 Max reparieren",
+        "ru": "Fix water_box_custom_mode для S4 Max",
+        "pt": "Fix water_box_custom_mode para S4 Max",
+        "nl": "Maak waterdoos klaar voor S4 Max",
+        "fr": "Fixer water_box_custom_mode pour S4 Max",
+        "it": "Fissare acqua_box_custom_mode per S4 Max",
+        "es": "Fijar el agua_box_custom_mode para S4 Max",
+        "pl": "Fix water_box_custom_mode",
+        "uk": "Фіксація води_box_custom_mode для S4 Max",
+        "zh-cn": "Fix水_箱_custom_mode for S4 Max"
       }
     },
     "titleLang": {
@@ -181,24 +181,25 @@
   "objects": [],
   "instanceObjects": [
     {
-        "_id": "info",
-        "type": "channel",
-        "common": {
-            "name": "Information"
-        },
-        "native": {}
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
     },
     {
-        "_id": "info.connection",
-        "type": "state",
-        "common": {
-            "role": "indicator.connected",
-            "name": "Device or service connected",
-            "type": "boolean",
-            "read": true,
-            "write": false,
-            "def": false
-        },
-        "native": {}
-    }]
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }

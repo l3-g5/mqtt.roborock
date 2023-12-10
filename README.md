@@ -21,6 +21,7 @@ This adapter allows you the control, get states, cleaning history and view the m
 ## The supported robots are:
 
 - Roborock S4
+- Roborock S4 Max
 - Roborock S5
 - Roborock S5 Max
 - Roborock S6
@@ -28,11 +29,17 @@ This adapter allows you the control, get states, cleaning history and view the m
 - Roborock S6 MaxV
 - Roborock S7
 - Roborock S7 MaxV (Ultra)
+- Roborock Q7
 - Roborock Q7 Max
 - Roborock S7 Pro Ultra
+- Roborock S7 Max Ultra
+- Roborock S8
+- Roborock S8 Pro Ultra
+- Roborock Q Revo
 
 ## Zone cleaning
 This feature only works when map creation is enabled in the adapter options!
+### Map creation does not work on raspberry pi
  - There is a webserver running. Default port is 6824
  - Open http://iobroker:6824/map.html in your browser (change http://iobroker your ioBroker hostname or ip!!!)
  - Draw your square meant for cleaning. Roborock supports up to 4 cleaning zones at once.
@@ -44,13 +51,52 @@ This feature only works when map creation is enabled in the adapter options!
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.4.4 (2023-09-24)
+* (copystring) Fix for getting the map for each cleaning record
+
+### 0.4.3 (2023-09-23)
+* (copystring) Refactor code
+* (copystring) Fix mainUpdateInterval not working
+
+### 0.4.2 (2023-09-18)
+* (copystring) Fix S6 gen path
+* (copystring) Add missing types library
+
+### 0.4.1 (2023-09-17)
+* (copystring) Fix typos in definitions docs generation
+* (copystring) Add missing types library
+
+### 0.4.0 (2023-09-17)
+* (copystring) When a robot goes offline after error during cleaning then clear all intervals and start them when it robot comes back online
+* (copystring) When it fails to receive the map output a warning instead of error since most of them are timeouts
+* (copystring) Migrate definitions for each robot to new system
+* (copystring) Use the system to automatically generate documentation for each robot and it's parameters, attributes, commands, etc
+* (copystring) S7 Max Ultra support
+
+### 0.3.2 (2023-09-04)
+* (copystring) Fix some S8 Pro Ultra object types
+
+### 0.3.1 (2023-08-29)
+* (copystring) Fix water_box_custom_mode for S4 Max
+
+### 0.3.0 (2023-08-29)
+* (copystring) Add support for clean_percent of Roborock S7 MaxV (Ultra)
+* (copystring) Basic Revo Q support
+* (copystring) Fix consumables for S6
+
+### 0.2.1 (2023-07-12)
+* (copystring) Fix adapter options
+
+### 0.2.0 (2023-07-11)
 * (copystring) Make adapter turn green only when username & password are correct
 * (copystring) Add vacuum online status and deviceInfo
 * (copystring) Add support for Camera of MaxV models
 * (copystring) Add support for titles of obstacles
 * (copystring) Make options a little prettier
 * (copystring) Add support to check for new firmware
+* (copystring) Add Support for Roborock S8, S8 Pro Ultra, S4 Max, Q7, S7 Max Ultra
+* (copystring) Loads of bug fixes
+* (copystring) Add option to sniff traffic via mitmproxy
 
 ### 0.1.6 (2023-03-13)
 * (copystring) Add touch support for zones in web interface
