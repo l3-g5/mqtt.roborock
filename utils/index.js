@@ -53,6 +53,7 @@ class Adapter {
 		}
 		this.log = new log.Logger(log.LogLevel[this.config.logLevel]);
 		this.supportsFeature = undefined;
+		this.language = this.config.language;
 
 		this.vacuums = {};
 
@@ -111,9 +112,10 @@ class Adapter {
 	/**
 	 * @param {string} id
 	 * @param {State | boolean} state
+	 * @param {boolean} _ack
 	 * @returns {Promise<any>}
 	 */
-	setStateAsync(id, state) {
+	setStateAsync(id, state, _ack = false) {
 		if (id.startsWith(plugin_state_prefix)) {
 			id = id.substring(plugin_state_prefix.length);
 		}
@@ -133,7 +135,10 @@ class Adapter {
 			const duid = idParts[1];
 			const folder = idParts[2];
 			const command = idParts[3];
-			if (folder !== "commands" && folder != "reset_consumables" && folder != "map" && folder != "firmwareFeatures"
+			if (!this.vacuums[duid]) {
+				this.log.debug("Could not send state for '" + id + "':", state);
+			}
+			if (this.vacuums[duid] && folder !== "commands" && folder != "reset_consumables" && folder != "map" && folder != "firmwareFeatures"
 				&& command != "Records" && command != "msg_seq" && command != "msg_ver") {
 				idParts[0] = this.config.topic;
 				idParts[1] = this.vacuums[duid].name.split(" ").join("_").toLowerCase();
@@ -177,6 +182,14 @@ class Adapter {
 		this.log.debug("MQTT subscribe:", topic);
 		this.client.subscribe(topic);
 		this.subscribedStates.push(topic);
+	}
+
+	/**
+	 * @param {string} id
+	 * @returns {Promise<State | undefined>}
+	 */
+	getObjectAsync(id) {
+		return this.getStateAsync(id);
 	}
 
 	/**
@@ -225,14 +238,14 @@ class Adapter {
 	 * @param {(...args: any) => void} callback
 	 * @param {number} ms
 	 * @param  {...any} args
-	 * @returns {NodeJS.Timer}
+	 * @returns {NodeJS.Timeout}
 	 */
 	setInterval(callback, ms, ...args) {
 		return setInterval(callback, ms, ...args);
 	}
 
 	/**
-	 * @param {NodeJS.Timer} intervalId
+	 * @param {NodeJS.Timeout} intervalId
 	 */
 	clearInterval(intervalId) {
 		clearInterval(intervalId);
