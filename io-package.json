@@ -1,98 +1,99 @@
 {
   "common": {
     "name": "roborock",
-    "version": "0.6.2",
+    "version": "0.6.16",
+    "tier": 1,
     "news": {
-      "0.6.2": {
-        "en": "Fix start of go2rtc",
-        "de": "Start von go2rtc",
-        "ru": "Исправлено начало go2rtc",
-        "pt": "Fix start of go2rtc",
-        "nl": "Begin van Go2rtc herstellen",
-        "fr": "Correction du début de go2rtc",
-        "it": "Risolvere l'inizio di go2rtc",
-        "es": "Inicio fijo de go2rtc",
-        "pl": "Napraw start go2rtc",
-        "uk": "Виправлення запуску go2rtc",
-        "zh-cn": "修复 go2rtc 的开始"
+      "0.6.16": {
+        "en": "Bugfixes\nupdate test-and-release.yml\nFix S6 feature detection\nMigrate from canvas to @napu-rs/canvas\nAdd Qrevo S & Qrevo Curve",
+        "de": "Bugfixes\nupdate test-and-release.yml\nFix S6 Funktion Erkennung\nVon Leinwand zu @napu-rs/canvas migrieren\nQrevo S & Qrevo Kurve",
+        "ru": "Bugfixs\nобновление test-and-release.yml\nФикс S6\nMigrate from canvas to @napu-rs/canvas\nДобавить Qrevo S & Qrevo Куры",
+        "pt": "Bugfixs\natualizar test-and-release.yml\nCorrigir detecção de recursos S6\nMigrar de tela para @napu-rs/canvas\nAdicionar Qrevo S & Qrevo Curve",
+        "nl": "Bugfixes\nupdate test-and-release.yml\nFix S6-functiedetectie\nMigreren van doek naar @napu-rs/canvas\nQrevo S & Qrevo toevoegen Curve",
+        "fr": "Fixes de bogue\nmettre à jour test-and-release.yml\nCorrection de la détection des fonctionnalités S6\nMigrer de la toile à @napu-rs/canvas\nAjouter Qrevo S & Qrevo Courbe",
+        "it": "Bugfix\naggiornamento test-and-release.yml\nRilevamento della funzione Fix S6\nMigrare da tela a @napu-rs/canvas\nAggiungi Qrevo S & Qrevo Curva",
+        "es": "Bugfixes\nactualizar test-and-release.yml\nDetección de funciones S6\nMigrar de lienzo a @napu-rs/canvas\nAñadir Qrevo S ' Qrevo Curva",
+        "pl": "Korekty błędów\nupdate test- and- releasase.yml\nNapraw wykrywanie funkcji S6\nMigracja z płótna na @ napu- rs / płótno\nDodaj Qrevo S & Qrevo Krzywa",
+        "uk": "Помилки\njavascript licenses api веб-сайт go1.13.8\nВизначення функції S6\nМіграція з полотна до @napu-rs/canvas\nДодати Qrevo S & Qrevo Проксимус",
+        "zh-cn": "错误修正\n更新测试和释放.yml\n修复 S6 特性检测\n从帆布迁移到 @napu-rs/canvas\n添加 Qrevo S & Qrevo 曲线"
       },
-      "0.6.1": {
-        "en": "Fix lint",
-        "de": "Fix lint",
-        "ru": "Fix lint",
-        "pt": "Fix lint",
-        "nl": "Fix plint",
-        "fr": "Fixer la peluche",
-        "it": "Fissare l'intreccio",
-        "es": "Lino fijo",
-        "pl": "Napraw lint",
-        "uk": "Фіксований відтінок",
-        "zh-cn": "修补线"
+      "0.6.15": {
+        "en": "Refactor some code\nimprove handling of online/offline detection and related logging\nS6 MaxV supports avoid carpet",
+        "de": "Refactor einige Code\nverbesserung des umgangs mit online/offline-erkennung und verwandter protokollierung\nS6 MaxV-Träger vermeiden Teppich",
+        "ru": "Рефакторировать код\nулучшение работы с онлайн/оффлайн-обнаружением и смежными лесозаготовками\nS6 MaxV поддерживает избегание ковра",
+        "pt": "Refactor algum código\nmelhorar o manuseio de detecção on-line/offline e registro relacionado\nSuportes S6 MaxV evitar tapete",
+        "nl": "Code refactoreren\nverbeteren van de omgang met online/offline detectie en aanverwante logging\nS6 MaxV ondersteunt vermijden tapijt",
+        "fr": "Refactorer un code\naméliorer la gestion de la détection en ligne/hors ligne et l'enregistrement connexe\nSupports S6 MaxV pour éviter le tapis",
+        "it": "Refactor alcuni codici\nmigliorare la gestione del rilevamento online/offline e relativi logging\nI supporti S6 MaxV evitano il tappeto",
+        "es": "Refactor algún código\nmejorar el manejo de la detección en línea/offline y registro conexo\nS6 MaxV admite evitar la alfombra",
+        "pl": "Zmień kod\npoprawa obsługi wykrywania online / offline i związanego z tym wyrębu\nS6 MaxV obsługuje unikać dywanu",
+        "uk": "Рефактор коду\nпокращити роботу онлайн / в автономному режимі виявлення та пов'язаних з реєстрацією\nS6 MaxV підтримує ковролін",
+        "zh-cn": "重构一些代码\n改进在线/离线检测和相关记录的处理\nS6 最大V 支持避免地毯"
       },
-      "0.6.0": {
-        "en": "New and improved message queue handler\nConvert robot features to new much more modular system\nAdd support for large photos of obstacles\nMany bug fixes I can't remember :D",
-        "de": "Neuer und verbesserter Nachrichtenwartegriff\nRoboter-Features in neues viel mehr modulares System umwandeln\nUnterstützung für große Fotos von Hindernissen\nViele Fehlerbehebungen kann ich mich nicht erinnern :D",
-        "ru": "Новый и улучшенный обработчик очереди сообщений\nПеревести функции роботов в новые гораздо более модульные системы\nДобавить поддержку для больших фотографий препятствий\nМногие исправления ошибок, которые я не могу вспомнить:D",
-        "pt": "Manipulador de fila de mensagem novo e melhorado\nConverter recursos de robô para novo sistema muito mais modular\nAdicionar suporte para grandes fotos de obstáculos\nMuitas correções de bugs que não me lembro :D",
-        "nl": "Nieuwe en verbeterde bericht wachtrij-afhandeling\nConverteer robot functies naar nieuwe veel meer modulair systeem\nOndersteuning toevoegen voor grote foto's van obstakels\nVeel bug fixes die ik me niet kan herinneren:D",
-        "fr": "Nouveau gestionnaire de files d'attente de messages amélioré\nConvertir les fonctionnalités du robot en un nouveau système beaucoup plus modulaire\nAjouter un support pour les grandes photos des obstacles\nBeaucoup de corrections de bugs dont je ne me souviens pas :D",
-        "it": "Nuovo e migliorato gestore della coda dei messaggi\nConvertire funzioni robot in un nuovo sistema molto più modulare\nAggiungi supporto per grandi foto di ostacoli\nMolte correzioni di bug non ricordo:D",
-        "es": "Manejador de cola de mensaje nuevo y mejorado\nConvertir características de robot en nuevo sistema mucho más modular\nAñadir soporte para grandes fotos de obstáculos\nMuchas correcciones de errores que no puedo recordar :D",
-        "pl": "Nowy i ulepszony menedżer kolejki wiadomości\nPrzelicz funkcje robota do nowego znacznie bardziej modułowego systemu\nDodaj wsparcie dla dużych zdjęć przeszkód\nWiele poprawek, których nie pamiętam: D",
-        "uk": "Новий та покращений обробник черги повідомлення\nПеретворення функцій роботи на новий модуль\nДодати підтримку для великих фото перешкод\nБагато виправлень помилок я не можу пам'ятати :D",
-        "zh-cn": "新建和改进的消息队列处理器\n将机器人特性转换为新的更多模块化系统\n添加障碍的大照片支持\n许多错误修正我不记得: D"
+      "0.6.14": {
+        "en": "Fix bug in app_goto_target parameter validation",
+        "de": "Fehler in der Parametervalidierung von app_goto_target beheben",
+        "ru": "Исправление ошибки в проверке параметров приложения_goto_target",
+        "pt": "Corrigir bug na validação do parâmetro app_goto_target",
+        "nl": "Fix bug in app_goto_target parameter validatie",
+        "fr": "Correction du bug dans la validation des paramètres app_goto_cible",
+        "it": "Fissa bug nella validazione dei parametri app_goto_target",
+        "es": "Corregir error en validación del parámetro app_goto_target",
+        "pl": "Popraw błąd w walidacji parametru app _ goto _ target",
+        "uk": "Виправлення помилок у валідації параметра app_goto_target",
+        "zh-cn": "在 app_goto_目标参数验证中修复错误"
       },
-      "0.5.4": {
-        "en": "Fix mqtt disconnect/reconnect bug on start of adapter",
-        "de": "Behebt mqtt den Fehler beim Start des Adapters",
-        "ru": "Fix mqtt отключения/подключения клопа в начале адаптера",
-        "pt": "Corrigir mqtt desconectar/reconectar o erro no início do adaptador",
-        "nl": "Fix mqtt loskoppelen/reconnect bug bij het starten van de adapter",
-        "fr": "Correction du bug de déconnexion/reconnect de mqtt au début de l'adaptateur",
-        "it": "Fissare mqtt scollegare/ricollegare bug all'inizio dell'adattatore",
-        "es": "Fijar el fallo de desconexión/reconexión en el inicio del adaptador",
-        "pl": "Napraw błąd odłączenia / ponownego podłączenia mqtt na początku adaptera",
-        "uk": "Виправлення mqtt відключення / відключення помилок на запуску адаптера",
-        "zh-cn": "在适配器启动时修复 mqtt 断开/ 重连接错误"
+      "0.6.13": {
+        "en": "Bug fixes\nAdd basic support for S8 MaxV Ultra\nNewly found attributes are now warning instead of error\nImprove detection of `home_sec`\nFix docking station detection\nBREAKING: Adjust docking station states to reflect the smart phone app\nDetect remote devices and connect via mqtt instead\nImprove docking station feature handling",
+        "de": "Fehlerbehebungen\nGrundunterstützung für S8 MaxV hinzufügen Ultra\nNeu gefundene Attribute sind jetzt Warnung statt Fehler\nErkennung von `home_sec verbessern `\nErkennung der Andockstation\nBREAKING: Anpassen der Docking Station Zustände, um die Smartphone-App zu reflektieren\nRemote-Geräte erkennen und über mqt anschließen\nVerbessern Sie die Funktion der Docking Station",
+        "ru": "Запястья\nДобавить базовую поддержку S8 MaxV Ультра\nНедавно найденные атрибуты теперь предупреждают, а не ошибаются\nУлучшить обнаружение `home_sec \"\nОбнаружение док-станций\nНастройка состояния док-станции для отражения приложения смарт-телефон\nОтобразить удаленные устройства и подключиться через mqtt\nУлучшить обработку док-станций",
+        "pt": "Correções de bugs\nAdicionar suporte básico para S8 MaxV Ultra Ultra Ultra Ultra\nOs atributos recém-chegados estão agora alertando em vez de erro\nMelhorar a detecção de `home_sec \"\nCorrigir detecção de estação de ancoragem\nBREAKING: Ajustar a estação de ancoragem afirma refletir o aplicativo de telefone inteligente\nDetectar dispositivos remotos e conectar via mqtt em vez\nMelhorar o manuseio de recursos da estação de ancoragem",
+        "nl": "Bugfixes\nBasisondersteuning voor S8 MaxV toevoegen Ultra\nNieuw gevonden attributen zijn nu waarschuwing in plaats van fout\nVerbeteren van detectie van \"home_sec\" Wat\nFix docking station detectie\nBREAKING: Aanpassen docking station staten om de smartphone app weer te geven\nDetecteer externe apparaten en verbind via mqtt in plaats daarvan\nVerbetering docking station functie behandeling",
+        "fr": "Corrections des bogues\nAjouter le support de base pour S8 MaxV Ultra\nLes attributs nouvellement trouvés sont maintenant avertis au lieu d'erreur\nAméliorer la détection de `home_sec \"\nCorrection de la détection des stations d'amarrage\nBREAKING: Réglez les états de station d'accueil pour refléter l'application de téléphone intelligent\nDétecter les périphériques distants et se connecter via mqtt à la place\nAméliorer la gestion des fonctionnalités de la station d'amarrage",
+        "it": "Correzioni di bug\nAggiungi supporto di base per S8 MaxV Ultra\nGli attributi appena trovati ora avvertono invece di errore\nMigliorare il rilevamento di `home_sec #\nRilevamento della stazione di docking\nBREAKING: Regolare gli stati di docking station per riflettere l'app smart phone\nRilevare dispositivi remoti e collegare tramite mqtt\nMigliorare la gestione delle funzioni docking station",
+        "es": "Corrección de errores\nAñadir soporte básico para S8 MaxV Ultra\nLos atributos recién encontrados son ahora advertencia en lugar de error\nMejorar la detección de `home_sec `\nDetección de estación de acoplamiento fijo\nBREAKING: Ajuste los estados de la estación de acoplamiento para reflejar la aplicación de teléfono inteligente\nDetectar dispositivos remotos y conectar a través de mqtt\nMejorar la función de estación de docking",
+        "pl": "Poprawki błędów\nDodaj podstawowe wsparcie dla S8 MaxV Ultra\nNowo znalezione atrybuty są teraz ostrzeganie zamiast błędu\nPoprawa wykrywania \"home _ sec '\nNapraw wykrywanie stacji dokującej\nBREAKING: Dostosowanie stacji dokującej stan odzwierciedlać aplikacji smartphone\nWykrywanie zdalnych urządzeń i łączenie za pośrednictwem mqtt\nPoprawa obsługi funkcji stacji dokującej",
+        "uk": "Виправлення помилок\nДодати базову підтримку S8 MaxV Ультра\nНові знайдені атрибути тепер попереджають замість помилки\nПокращення виявлення `home_sec й\nФіксація док-станція\nBREAKING: Регульувати стани докінгу для відображення смартфона\nВиявлення віддалених пристроїв та підключення через mqtt замість\nПокращити роботу док-станція",
+        "zh-cn": "错误修正\n为 S8 MaxV 添加基本支持 超强\n新找到的属性现在是警告而不是错误\n改进对“家园”的检测 `\n固定对接站检测\n调整对接站状态以反映智能手机应用\n检测远程设备并通过 mqtt 连接\n改进对接站功能处理"
       },
-      "0.5.3": {
-        "en": "Restore original UserData creation",
-        "de": "Wiederherstellen der ursprünglichen UserData-Erstellung",
-        "ru": "Восстановление оригинального создания UserData",
-        "pt": "Restaurar a criação original do UserData",
-        "nl": "Originele UserData-aanmaak herstellen",
-        "fr": "Restaurer la création originale de userData",
-        "it": "Ripristina la creazione originale UserData",
-        "es": "Restaurar la creación original de UserData",
-        "pl": "Przywróć oryginalne tworzenie UserData",
-        "uk": "Відновити створення оригінального користувача",
-        "zh-cn": "恢复原始用户数据创建"
+      "0.6.12": {
+        "en": "Change go2rtc github to go2rtc-static npm",
+        "de": "Wechseln go2rtc github zu go2rtc-statisch npm",
+        "ru": "Измените go2rtc github на go2rtc-статический npm",
+        "pt": "Alterar go2rtc github para go2rtc-static npm",
+        "nl": "Verander go2rtc github naar go2rtc-static npm",
+        "fr": "Changer go2rtc github en go2rtc-static npm",
+        "it": "Cambiare go2rtc github a go2rtc-static npm",
+        "es": "Cambiar go2rtc github a go2rtc-static npm",
+        "pl": "Zmień go2rtc github na go2rtc- static npm",
+        "uk": "Зміна go2rtc github для go2rtc-static npm",
+        "zh-cn": "将go2rtc github改为go2rtc- static npm"
       },
-      "0.5.2": {
-        "en": "Little bug fixes\nRemove Roborock S5. There is no such device\nLimit HomeData requests to prevent rate limit",
-        "de": "Kleine Fehlerbehebungen\nEntfernen Roborock S5. Es gibt kein solches Gerät\nBegrenzt nach Hause Datenanforderungen zur Verhinderung von Ratengrenzen",
-        "ru": "Маленькие исправления ошибок\nУдалить Roborock S5. Нет такого устройства\nОграничение дома Запросы на данные для предотвращения ограничения скорости",
-        "pt": "Pequenas correções de bugs\nRemover Roborock S5. Não há tal dispositivo\nLimitar a casa Pedidos de dados para evitar limite de taxa",
-        "nl": "Kleine foutherstel\nVerwijder Roborock S5. Zo'n apparaat bestaat niet\nBeperken begin Gegevensverzoeken om tarieflimiet te voorkomen",
-        "fr": "Petit bug corrigé\nSupprimer Roborock S5. Il n'y a pas de tel dispositif\nLimiter la maison Demandes de données pour prévenir la limitation des tarifs",
-        "it": "Piccoli correzioni di bug\nRimuovere Roborock S5. Non esiste un tale dispositivo\nLimite Home Richieste di dati per prevenire il limite di velocità",
-        "es": "Pequeñas correcciones de errores\nQuitar Roborock S5. No hay tal dispositivo\nLimite el hogar Solicitudes de datos para prevenir el límite de tarifas",
-        "pl": "Małe poprawki błędów\nUsuń Robolock S5. Nie ma takiego urządzenia\nSpis treści Prośby o dane w celu zapobieżenia ograniczeniom stawek",
-        "uk": "Маленькі виправлення помилок\nВидалити Roborock S5. Немає такого пристрою\nГоловна Запити даних для запобігання обмеження швидкості",
-        "zh-cn": "小错误修正\n拿掉罗波洛克S5 没有这种装置\n限制家 防止费率限制的数据请求"
+      "0.6.11": {
+        "en": "Add `voice_chat_status` to S7 MaxV",
+        "de": "Fügen Sie `voice_chat_status` zu S7 MaxV hinzu",
+        "ru": "Добавить `voice_chat_status' в S7 MaxV",
+        "pt": "Adicionar `voice_chat_status` a S7 MaxV",
+        "nl": "Toevoegen aan S7 MaxV",
+        "fr": "Ajouter `voix_chat_status` à S7 MaxV",
+        "it": "Aggiungi `voice_chat_status` a S7 MaxV",
+        "es": "Añadir `voice_chat_status` a S7 MaxV",
+        "pl": "Dodaj 'voice _ chat _ status' do S7 MaxV",
+        "uk": "Додати `voice_chat_status` до S7 MaxV",
+        "zh-cn": "将“ voice_ chat_ status” 添加到 S7 最大值"
       },
-      "0.5.1": {
-        "en": "Fix lint",
-        "de": "Fix lint",
-        "ru": "Фиксация lint",
-        "pt": "Fix lint",
-        "nl": "_",
-        "fr": "Fix lint",
-        "it": "Fissare l'intuizione",
-        "es": "Lino fijo",
-        "pl": "Fix lint",
-        "uk": "Фіксований відтінок",
-        "zh-cn": "Fix Lint"
+      "0.6.10": {
+        "en": "Add `set_switch_status` to S7 MaxV and Q Revo Pro",
+        "de": "`set_switch_status` zu S7 MaxV und Q Revo Pro hinzufügen",
+        "ru": "Добавить `set_switch_status' в S7 MaxV и Q Revo Pro",
+        "pt": "Adicione `set_switch_status` ao S7 MaxV e Q Revo Pro",
+        "nl": "Toevoegen aan S7 MaxV en Q Revo Pro",
+        "fr": "Ajouter `set_switch_status` à S7 MaxV et Q Revo Pro",
+        "it": "Aggiungi `set_switch_status` a S7 MaxV e Q Revo Pro",
+        "es": "Añadir `set_switch_status` a S7 MaxV y Q Revo Pro",
+        "pl": "Dodaj 'set _ switch _ status' do S7 MaxV i Q Revo Pro",
+        "uk": "Додати `set_switch_status` до S7 MaxV та Q Revo Pro",
+        "zh-cn": "在 S7 MaxV 和 Q Revo Pro 中添加“ set_switch_status ”"
       }
     },
     "titleLang": {
@@ -129,9 +130,12 @@
       "template",
       "home automation"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free",
+      "link": "https://github.com/copystring/ioBroker.roborock/blob/main/README.md"
+    },
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "roborock.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/copystring/ioBroker.roborock/main/admin/roborock.png",
@@ -147,7 +151,7 @@
     },
     "dependencies": [
       {
-        "js-controller": ">=3.3.22"
+        "js-controller": ">=5.0.19"
       }
     ],
     "globalDependencies": [
@@ -170,6 +174,8 @@
     "password"
   ],
   "native": {
+    "username": "",
+    "password": "",
     "enable_map_creation": false,
     "map_creation_interval": 2,
     "map_scale": 2,

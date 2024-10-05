@@ -37,6 +37,9 @@ This adapter allows you the control, get states, cleaning history and view the m
 - Roborock Q Revo
 - Roborock Q8 Max
 - Roborock Q5 Pro
+- Roborock Q Revo Pro
+- Roborock Qrevo S
+- Roborock Qrevo Curve
 
 ## Zone cleaning
 This feature only works when map creation is enabled in the adapter options!
@@ -52,6 +55,84 @@ This feature only works when map creation is enabled in the adapter options!
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### 0.6.16 (2024-10-02)
+ * (copystring) Bugfixes
+ * (copystring) update test-and-release.yml
+ * (Black-Thunder) Fix S6 feature detection
+ * (copystring) Migrate from canvas to @napu-rs/canvas
+ * (copystring) Add Qrevo S & Qrevo Curve
+
+### 0.6.15 (2024-09-22)
+ * (copystring) Refactor some code
+ * (copystring) improve handling of online/offline detection and related logging
+ * (copystring) S6 MaxV supports avoid carpet
+
+### 0.6.14 (2024-09-13)
+ * (copystring) Fix bug in app_goto_target parameter validation
+
+### 0.6.13 (2024-09-12)
+ * (copystring) Bug fixes
+ * (copystring) Add basic support for S8 MaxV Ultra
+ * (copystring) Newly found attributes are now warning instead of error
+ * (copystring) Improve detection of `home_sec`
+ * (copystring) Fix docking station detection
+ * (copystring) BREAKING: Adjust docking station states to reflect the smart phone app
+ * (copystring) Detect remote devices and connect via mqtt instead
+ * (copystring) Improve docking station feature handling
+
+### 0.6.12 (2024-09-08)
+ * (copystring) Change go2rtc github to go2rtc-static npm
+
+### 0.6.11 (2024-09-06)
+* (copystring) Add `voice_chat_status` to S7 MaxV
+
+### 0.6.10 (2024-09-05)
+* (copystring) Add `set_switch_status` to S7 MaxV and Q Revo Pro
+
+### 0.6.9 (2024-09-05)
+* (copystring) Fix bugs
+* (copystring) Add missing states
+* (copystring) Add missing translations
+
+### 0.6.8 (2024-09-04)
+* (copystring) Q Revo supports `switch_status` in `get_status`
+
+### 0.6.7 (2024-09-04)
+* (copystring) Update dependencies
+* (copystring) Many bug fixes
+* (copystring) Improve support for: Q Revo Pro
+* (copystring) Add parsing of dss in deviceStatus as `docking station status`
+* (copystring) Add `resume_segment_clean` & `stop_segment_clean`
+* (copystring) Improve reconnect intervall of direct connection
+* (copystring) Add missing translations
+* (copystring) Fix cleaningInfo of older Robots like S6 etc
+* (copystring) General logging improvements
+
+### 0.6.6 (2024-07-14)
+* (copystring) require min node 20 to operate correctly with current dependencies
+
+### 0.6.5 (2024-07-13)
+* (copystring) Add and fix some parameters and attributes
+* (copystring) Fix getMap() in getParameter()
+* (copystring) Add connection state to timeouts
+* (copystring) Detect and report unsupported attributes
+* (copystring) Improve camera and voice support detection
+* (copystring) Wait for TCP client to connect on start of adapter
+* (copystring) Add handling of TCP chunks. This will fix a lot of timeouts 🎉
+* (copystring) Manage stop/stop in the webinterface via state of robot instead of guessing via clicking the buttons in the webinterface
+* (copystring) Refactor and improve javascript code of web interface
+* (copystring) Add Roborock Q Revo Pro
+* (copystring) Update dependencies
+
+### 0.6.4 (2024-04-21)
+* (copystring) Fix io-package.json and update packages
+
+### 0.6.3 (2024-04-21)
+* (copystring) Add consumables to Qrevo MaxV
+* (copystring) Fix S5 Max clean records defintion
+* (copystring) Fix app_start via web interface
+* (copystring) Improve local devices discovery
+
 ### 0.6.2 (2024-04-05)
 * (copystring) Fix start of go2rtc
 
