@@ -112,6 +112,16 @@ class Adapter {
 	/**
 	 * @param {string} id
 	 * @param {State | boolean} state
+	 * @param {boolean} ack
+	 * @returns {Promise<any>}
+	 */
+	setStateChangedAsync(id, state, ack = false) {
+		return this.setStateAsync(id, state, ack);
+	}
+
+	/**
+	 * @param {string} id
+	 * @param {State | boolean} state
 	 * @param {boolean} _ack
 	 * @returns {Promise<any>}
 	 */
@@ -186,10 +196,18 @@ class Adapter {
 
 	/**
 	 * @param {string} id
+	 * @returns {any}
+	 */
+	getObject(id) {
+		return this.states[id];
+	}
+
+	/**
+	 * @param {string} id
 	 * @returns {Promise<State | undefined>}
 	 */
 	getObjectAsync(id) {
-		return this.getStateAsync(id);
+		return new Promise((resolve) => { resolve(this.getObject(id)); });
 	}
 
 	/**
